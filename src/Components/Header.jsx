@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "../App.css";
+import logoImage from "../assets/images/clickifyr.png";
+
 
 const Header = () => {
   const location = useLocation();
@@ -24,7 +26,7 @@ const Header = () => {
       <nav className="flex relative mx-10 items-center justify-between">
         <HashLink smooth to="#slider">
           <img
-            src="/images/clickifyr.png"
+            src={logoImage}
             className="lg:w-36 w-36 mt-1 -ml-3 lg:mx-6"
             alt=""
           />
